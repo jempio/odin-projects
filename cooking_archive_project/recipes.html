@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jempio's Cooking Archive</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            background-color: #65a8ca;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .section {
+            flex-basis: 45%; /* Adjust the size as needed */
+            padding: 20px;
+            border: 1px solid #2f7ed8;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Position the sections in each corner */
+        .section.top-left {
+            order: 1;
+            align-self: flex-start;
+        }
+
+        .section.top-right {
+            order: 2;
+            align-self: flex-start;
+        }
+
+        .section.bottom-left {
+            order: 3;
+            align-self: flex-end;
+        }
+
+        .section.bottom-right {
+            order: 4;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jempio's cooking archive 🍳</h1>
+    </header>
+    <div class="container">
+        <div class="section top-left">
+        <img src="./recipes_images/steak-frites.jpg" alt="Image" height="350px" width="350px">
+        <p>steak frites w/ bearnaise sauce and cherry tomatoes drizzled in balsamic vinegar</p>
+        </div>
+        <div class="section top-right">Section 2</div>
+        <div class="section bottom-left">Section 3</div>
+        <div class="section bottom-right">Section 4</div>
+    </div>
+    
+</body>
+</html>
